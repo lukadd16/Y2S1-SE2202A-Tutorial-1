@@ -1,0 +1,132 @@
+:root{
+  --primary: #0065ad;
+  --secondary: #AD4800;
+  --background: #333;
+  --text: #f2f2f2;
+  --info-border-radius: 24px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background.JPG");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+html {
+  height: 100%;
+}
+
+/**
+ * CSS rulesets for the navigation bar.
+ * Here we style the links inside the navbar,
+ * change the colour of links on hover,
+ * and add colour to the link we are currently visiting.
+ */
+.navbar {
+  position: fixed;
+  width: auto;
+  background-color: var(--background);
+  overflow: hidden;
+  text-align: center;
+  border-radius: 16px;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar a {
+  display: inline-block;
+  color: var(--text);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  background-color: var(--primary);
+  color: black;
+}
+
+/* CSS rulesets for the hero section */
+.hero {
+  height: 100%;
+  position: relative;
+}
+.hero-text {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--text);
+}
+
+/* CSS ruleset for a rounded button */
+.rounded-button {
+  text-decoration: none;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 28px;
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  background-color: var(--primary);
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* CSS rulesets for the detailed info sections */
+.about-section {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  padding: 50px;
+  border-radius: var(--info-border-radius);
+  text-align: center;
+  background-color: var(--secondary);
+  color: var(--text);
+}
+.work-experience-section {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  padding: 50px;
+  border-radius: var(--info-border-radius);
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--text);
+}
+.contact-section {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  padding: 50px;
+  border-radius: var(--info-border-radius);
+  text-align: center;
+  background-color: var(--secondary);
+  color: var(--text);
+}
+
+/* CSS rulesets for the footer */
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 1em 0px 1em;
+  text-align: center;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.rick {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
